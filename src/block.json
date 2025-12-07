@@ -1,0 +1,35 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "content-card/content-card",
+	"title": "内容卡片 (Content Card)",
+	"category": "embed",
+	"icon": "welcome-widgets-menus",
+	"description": "在文章中展示一个带有图片、标题和评分的内容卡片。",
+	"keywords": ["卡片", "内容", "评分"],
+	"textdomain": "content-card",
+	"editorScript": "file:./index.js",
+	"style": "file:./style.css",
+	"attributes": {
+		"imageUrl": {
+			"type": "string",
+			"default": ""
+		},
+		"titleText": {
+			"type": "string",
+			"default": ""
+		},
+		"ratingScore": {
+			"type": "number",
+			"default": 0
+		},
+		"abstractText": {
+			"type": "string",
+			"default": ""
+		},
+		"titleLink": {
+			"type": "string",
+			"default": ""
+		}
+	}
+}
